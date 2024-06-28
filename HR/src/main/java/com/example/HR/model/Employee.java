@@ -17,13 +17,12 @@ public class Employee {
 
 
     private  long Id; // Çalışanın benzersiz kimliği
-    private  String name ; // Çalışanın adı
-    private String position; // Çalışanın pozisyonu
+    private  String firstName ; // Çalışanın adı
+    private  String lastName ; // Çalışanın soyadı
+    private String jobTitle;
+    private String iban ;
 
     // Getter and Setter metotları
-    //Getter : Özel alanların değerini okumak için kullanılır .
-    //Setter : Özel alanların değerini ayarlamak için kullanılır .,
-
 
     public long getId() {
         return Id;
@@ -33,19 +32,45 @@ public class Employee {
         Id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getPosition() {
-        return position;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setPosition(String position) {
-        this.position = position;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
+
+    public String getJobTitle() {
+        return jobTitle;
+    }
+
+    public void setJobTitle(String jobTitle) {
+        this.jobTitle = jobTitle;
+    }
+
+    public String getIban() {
+        return iban;
+    }
+
+    public void setIban(String iban) {
+        this.iban = iban;
+    }
+
+
+
+
+
+    //Getter : Özel alanların değerini okumak için kullanılır .
+    //Setter : Özel alanların değerini ayarlamak için kullanılır .,
+
+
+
 }

@@ -42,8 +42,8 @@ public class EmployeeService {
         Employee employee = employeeRepository.findById(id).orElseThrow(() -> new RuntimeException("Çalışan bulunamadı"));
         //orElse yani if döngüsünün else ksımı gibi düşünebilirz .Aradığımız çalışan bulunmadığı durumlarda kullanıcıya böyle bir metin iletir
 
-        employee.setName(employeeDetails.getName());
-        employee.setPosition(employeeDetails.getPosition());
+        employee.setFirstName(employeeDetails.getFirstName());
+        employee.setJobTitle(employeeDetails.getJobTitle());
 
         return employeeRepository.save(employee);
 
